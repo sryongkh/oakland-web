@@ -2,9 +2,8 @@
 
 <?php include($root . "header.php"); ?>
 <main>
-  <section data-section="hero">
-    <div class="contxt"></div>
-    <div class="hero-img"></div>
-  </section>
+    <section data-section="hero">
+
+    </section>
 </main>
 <?php include($root . "footer.php"); ?>
