@@ -1,12 +1,36 @@
 @font-face {
     font-family: 'Inter Tight';
-    src: url('InterTight-Regular.eot');
-    src: url('InterTight-Regular.eot?#iefix') format('embedded-opentype'),
-        url('InterTight-Regular.woff2') format('woff2'),
-        url('InterTight-Regular.woff') format('woff'),
-        url('InterTight-Regular.svg#InterTight-Regular') format('svg');
-    font-weight: normal;
+    src: url('InterTight-SemiBold.eot');
+    src: url('InterTight-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-SemiBold.woff2') format('woff2'),
+        url('InterTight-SemiBold.woff') format('woff'),
+        url('InterTight-SemiBold.svg#InterTight-SemiBold') format('svg');
+    font-weight: 600;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-BlackItalic.eot');
+    src: url('InterTight-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-BlackItalic.woff2') format('woff2'),
+        url('InterTight-BlackItalic.woff') format('woff'),
+        url('InterTight-BlackItalic.svg#InterTight-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-ExtraBoldItalic.eot');
+    src: url('InterTight-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-ExtraBoldItalic.woff2') format('woff2'),
+        url('InterTight-ExtraBoldItalic.woff') format('woff'),
+        url('InterTight-ExtraBoldItalic.svg#InterTight-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
@@ -19,6 +43,174 @@
         url('InterTight-Italic.svg#InterTight-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-ExtraBold.eot');
+    src: url('InterTight-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-ExtraBold.woff2') format('woff2'),
+        url('InterTight-ExtraBold.woff') format('woff'),
+        url('InterTight-ExtraBold.svg#InterTight-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-MediumItalic.eot');
+    src: url('InterTight-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-MediumItalic.woff2') format('woff2'),
+        url('InterTight-MediumItalic.woff') format('woff'),
+        url('InterTight-MediumItalic.svg#InterTight-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-SemiBoldItalic.eot');
+    src: url('InterTight-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-SemiBoldItalic.woff2') format('woff2'),
+        url('InterTight-SemiBoldItalic.woff') format('woff'),
+        url('InterTight-SemiBoldItalic.svg#InterTight-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-ThinItalic.eot');
+    src: url('InterTight-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-ThinItalic.woff2') format('woff2'),
+        url('InterTight-ThinItalic.woff') format('woff'),
+        url('InterTight-ThinItalic.svg#InterTight-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-ExtraLightItalic.eot');
+    src: url('InterTight-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-ExtraLightItalic.woff2') format('woff2'),
+        url('InterTight-ExtraLightItalic.woff') format('woff'),
+        url('InterTight-ExtraLightItalic.svg#InterTight-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-BoldItalic.eot');
+    src: url('InterTight-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-BoldItalic.woff2') format('woff2'),
+        url('InterTight-BoldItalic.woff') format('woff'),
+        url('InterTight-BoldItalic.svg#InterTight-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-LightItalic.eot');
+    src: url('InterTight-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-LightItalic.woff2') format('woff2'),
+        url('InterTight-LightItalic.woff') format('woff'),
+        url('InterTight-LightItalic.svg#InterTight-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-Thin.eot');
+    src: url('InterTight-Thin.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-Thin.woff2') format('woff2'),
+        url('InterTight-Thin.woff') format('woff'),
+        url('InterTight-Thin.svg#InterTight-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-Bold.eot');
+    src: url('InterTight-Bold.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-Bold.woff2') format('woff2'),
+        url('InterTight-Bold.woff') format('woff'),
+        url('InterTight-Bold.svg#InterTight-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-Medium.eot');
+    src: url('InterTight-Medium.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-Medium.woff2') format('woff2'),
+        url('InterTight-Medium.woff') format('woff'),
+        url('InterTight-Medium.svg#InterTight-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-Black.eot');
+    src: url('InterTight-Black.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-Black.woff2') format('woff2'),
+        url('InterTight-Black.woff') format('woff'),
+        url('InterTight-Black.svg#InterTight-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-Regular.eot');
+    src: url('InterTight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-Regular.woff2') format('woff2'),
+        url('InterTight-Regular.woff') format('woff'),
+        url('InterTight-Regular.svg#InterTight-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-Light.eot');
+    src: url('InterTight-Light.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-Light.woff2') format('woff2'),
+        url('InterTight-Light.woff') format('woff'),
+        url('InterTight-Light.svg#InterTight-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('InterTight-ExtraLight.eot');
+    src: url('InterTight-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('InterTight-ExtraLight.woff2') format('woff2'),
+        url('InterTight-ExtraLight.woff') format('woff'),
+        url('InterTight-ExtraLight.svg#InterTight-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
     font-display: swap;
 }
 

@@ -4,6 +4,28 @@
   --c-darkgrey: #a6a6ab;
   --c-lightgrey: #f4f4f4;
   --c-white: #fff;
+
+  --size-h1: 4rem;
+  --size-h2: 2.5rem;
+  --size-h3: 2rem;
+  --size-body: 18px;
+  --size-label: 14px;
+  --size-accordion-title: 3rem;
+
+  --size-body-lh: 25px;
+  --size-label-lh: 20px;
+
+  --duration-1: 0.4s;
+  --duration-2: 0.6s;
+  --duration-3: 0.8s;
+  --timing: ease;
+
+  --p-header: 2% 6%;
+  --p-header-inl-mobile: 1.5rem;
+  --p-block: 140px;
+  --p-block-mobile: 6rem;
+  --p-inline: 100px;
+  --p-inline-mobile: 1.5rem;
 }
 /* RESET HTML */
 /* Box sizing rules */
@@ -61,8 +83,10 @@ h4 {
   text-wrap: balance;
 }
 /* A elements that don't have a class get default styles */
+a,
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
   color: currentColor;
 }
 /* Make images easier to work with */
@@ -88,7 +112,8 @@ textarea:not([rows]) {
 }
 /* END: RESET HTML */
 body {
-  overflow-x: hidden;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
 }
 header {
   height: fit-content;
@@ -99,9 +124,117 @@ header {
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  padding: 2% 6%;
+  padding: var(--p-header);
 }
-section[data-section="hero"] {
+main {
+  display: flex;
+  flex-direction: column;
+}
+/* GLOBAL */
+.fluid-heading-1,
+.fluid-heading-2,
+.fluid-heading-3 {
+  font-weight: 300 !important;
+}
+.fluid-heading-1 {
+  font-size: var(--size-h1);
+}
+.fluid-heading-2 {
+  font-size: var(--size-h2);
+}
+.fluid-heading-3 {
+  font-size: var(--size-h3);
+}
+.fluid-body,
+.fluid-txt {
+  font-size: var(--size-body);
+  line-height: var(--size-body-lh);
+}
+.fluid-label {
+  font-size: var(--size-label);
+  line-height: var(--size-label-lh);
+}
+/* END: GLOBAL */
+/* HERO */
+section[data-section="home-hero"] {
   min-height: 100dvh;
   background-color: var(--c-accent100);
+  display: flex;
+  flex-wrap: wrap;
 }
+section[data-section="home-hero"] * {
+  transition: var(--duration-1) var(--timing);
+}
+section[data-section="home-hero"] > * {
+  width: 50%;
+  height: inherit;
+  overflow: hidden;
+}
+section[data-section="home-hero"] .container {
+  padding: 5% var(--p-inline);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+section[data-section="home-hero"] .container .contxt {
+  text-transform: capitalize;
+  color: var(--c-white);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+section[data-section="home-hero"] .hero-img figure {
+  width: 100%;
+  height: 100%;
+}
+section[data-section="home-hero"] .hero-img figure > * {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: bottom center;
+}
+/* END: HERO */
+section[data-section="home-expertise"] {
+  padding: var(--p-block) var(--p-inline);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5rem;
+}
+section[data-section="home-expertise"] p {
+  width: 55%;
+}
+section[data-section="home-expertise"] .grid-expertise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem;
+  width: max-content;
+}
+section[data-section="home-expertise"] .scrolling-ctn {
+  overflow-x: auto;
+}
+section[data-section="home-expertise"] .grid-expertise .expertise-item {
+  width: 313px;
+  height: 375px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+section[data-section="home-expertise"] .grid-expertise .expertise-item * {
+  width: inherit;
+  height: inherit;
+}
+section[data-section="home-learnmore"] .learnmore-section {
+  height: 60%;
+  background: var(--c-lightgrey);
+}
+/* BUTTON */
+.btn {
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  font-size: var(--size-body);
+  line-height: var(--size-body-lh);
+  background: var(--c-white);
+  color: var(--c-accent100);
+  text-align: center;
+  border-radius: 4rem;
+}
+/* END: BUTTON */

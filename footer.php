@@ -2,7 +2,7 @@
 
 <footer></footer>
 <!-- JS -->
-<script src="/assets/js/theme.js"></script>
+<script src="<?php $root; ?>assets/js/theme.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,7 @@
     <meta name="theme-color" content="#212529" />
     <!-- CSS -->
     <link rel="stylesheet" href="<?php $root; ?>assets/css/theme.css" />
+    <link rel="stylesheet" href="<?php $root; ?>assets/css/responsive.css" />
     <link rel="stylesheet" href="<?php $root; ?>assets/font/font.css" />
 </head>
 

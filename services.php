@@ -2,7 +2,7 @@
 
 <?php include($root . "header.php"); ?>
 <main>
-    <section data-section="hero">
+    <section data-section="home-hero">
 
     </section>
 </main>
