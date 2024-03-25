@@ -21,7 +21,7 @@
   --timing: ease;
 
   --p-header: 2% 6%;
-  --p-header-inl-mobile: 1.5rem;
+  --p-header-mobile: 1.5rem;
   --p-block: 140px;
   --p-block-mobile: 6rem;
   --p-inline: 100px;
@@ -114,6 +114,7 @@ textarea:not([rows]) {
 body {
   font-family: "Inter Tight", sans-serif;
   font-weight: 300;
+  min-height: 100vh;
 }
 header {
   height: fit-content;
@@ -157,7 +158,7 @@ main {
 /* END: GLOBAL */
 /* HERO */
 section[data-section="home-hero"] {
-  min-height: 100dvh;
+  height: 100dvh;
   background-color: var(--c-accent100);
   display: flex;
   flex-wrap: wrap;
@@ -254,6 +255,15 @@ section[data-section="home-learnmore"] .learnmore-section .context {
   max-width: 787px;
   margin: auto 0;
 }
+section[data-section="home-learnmore"] .get-in-touch {
+  max-width: var(--max-w);
+  padding-inline: var(--p-inline);
+  margin-block: 100px var(--p-block);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+}
+
 /* BUTTON */
 .btn {
   width: fit-content;
@@ -274,3 +284,36 @@ section[data-section="home-learnmore"] .learnmore-section .context {
   content: "";
 }
 /* END: BUTTON */
+/* FOOTER */
+footer {
+  background: var(--c-accent100);
+  color: var(--c-white);
+}
+footer .container {
+  padding: 104px var(--p-inline) 64px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 70px;
+}
+footer .container > .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .menu {
+  display: flex;
+  grid-gap: 1.25rem;
+}
+footer .menu > * {
+  display: flex;
+  flex-direction: column;
+  min-width: 202px;
+}
+footer .container > p {
+  font-size: var(--size-label);
+  line-height: var(--size-label-lh);
+}
+footer .menu > div > p {
+  font-size: 21px;
+  margin-bottom: 1rem
+}
+/* END: FOOTER */

@@ -47,14 +47,28 @@
   }
   section[data-section="home-learnmore"] .learnmore-section .wrapper {
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
   }
   section[data-section="home-learnmore"] .learnmore-section .wrapper > * {
     margin: 0;
   }
+  footer .container {
+    grid-gap: 3rem;
+  }
+  footer .container > p {
+    text-align: center;
+  }
+  footer .container > .wrapper {
+    flex-direction: column;
+    grid-gap: 3rem;
+  }
+  footer .container > .wrapper .iso img {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 767.98px) {
   section[data-section="home-hero"] {
+    height: 100%;
     max-width: 100%;
     flex-direction: column;
   }
@@ -74,8 +88,12 @@
     width: 100%;
     padding-right: var(--p-inline-mobile);
   }
-  section[data-section="home-learnmore"] {
-    padding: 0 var(--p-inline-mobile) var(--p-inline-mobile);
+  section[data-section="home-learnmore"] > p {
+    padding: 0 var(--p-inline-mobile);
+  }
+  footer .menu {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 575.98px) {
@@ -105,5 +123,13 @@
   }
   section[data-section="home-hero"] .hero-img {
     max-height: 506px;
+  }
+  section[data-section="home-learnmore"] .learnmore-section,
+  section[data-section="home-learnmore"] .get-in-touch {
+    margin-block: var(--p-block-mobile);
+    padding: var(--p-inline-mobile);
+  }
+  footer .container {
+    padding: 4rem 2rem 2rem
   }
 }
