@@ -14,10 +14,44 @@
 @media (max-width: 1399.98px) {
 }
 @media (max-width: 1199.98px) {
+  section[data-section="home-learnmore"] {
+    --gap: 80px;
+  }
 }
 @media (max-width: 1023.98px) {
 }
 @media (max-width: 991.98px) {
+  section[data-section="home-hero"] .container {
+    padding: 2rem;
+  }
+  section[data-section="home-expertise"] {
+    padding-right: 0;
+  }
+  section[data-section="home-expertise"] .grid-expertise {
+    width: max-content;
+  }
+  section[data-section="home-expertise"] .expertise-item {
+    max-width: 313px;
+    max-height: 375px;
+  }
+  section[data-section="home-expertise"] .expertise-item:last-child {
+    margin-right: 20px;
+  }
+  section[data-section="home-learnmore"] .learnmore-section {
+    height: 100%;
+    padding-block: var(--p-inline-mobile);
+  }
+  section[data-section="home-learnmore"] > p {
+    padding-inline: var(--p-inline);
+    margin-left: 0;
+  }
+  section[data-section="home-learnmore"] .learnmore-section .wrapper {
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  section[data-section="home-learnmore"] .learnmore-section .wrapper > * {
+    margin: 0;
+  }
 }
 @media (max-width: 767.98px) {
   section[data-section="home-hero"] {

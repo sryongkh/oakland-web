@@ -34,6 +34,15 @@
   <section data-section="home-learnmore">
     <p class="fluid-body">Leading the market for two decades, we have been experts in energy efficiency. With an unwavering commitment to innovation, we offer tailored solutions for projects of all sizes. From LED lighting to photovoltaic energy and electric mobility, our dedicated team works tirelessly to deliver cutting-edge results. We are committed to shaping a more sustainable and efficient energy future.</p>
     <div class="learnmore-section">
+      <div class="wrapper">
+        <img src="<?php $root; ?>assets/media/section-desc.png" alt="">
+        <div class="context">
+          <h2 class="fluid-heading-2">Deep knowledge in the field</h2>
+          <p class="fluid-body">Our extensive experience and deep expertise in the energy sector have positioned us as leaders in the industry. With two decades of market leadership, we have honed our knowledge in energy efficiency, LED lighting, photovoltaic energy, and electric mobility to a level that sets us apart. Our team's profound understanding of these domains enables us to provide innovative, tailored solutions that not only meet but exceed the expectations of our clients.</p>
+          <a href="btn-2">Learn more</a>
+        </div>
+      </div>
+
     </div>
   </section>
 </main>
