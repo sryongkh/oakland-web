@@ -195,6 +195,39 @@ header .logo-container {
   font-size: var(--size-label);
   line-height: var(--size-label-lh);
 }
+.img-container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  text-align: end;
+  gap: 1.25rem;
+  color: var(--c-darkgrey);
+  font-size: var(--size-label);
+}
+.img-container figure {
+  position: relative;
+  padding-top: 51.6503856041%;
+  width: 70%;
+  height: auto;
+}
+.img-container figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.accordion {
+  color: var(--c-accent100);
+  background: transparent;
+  font-size: var(--size-accordion-title);
+  text-align: start;
+  text-transform: capitalize;
+  padding-block: 1.5rem;
+  border: 0;
+  border-top: 1px solid var(--c-darkgrey);
+}
 /* END: GLOBAL */
 /* HERO */
 section[data-section="home-hero"] {
@@ -261,41 +294,48 @@ section[data-section="home-expertise"] .expertise-item * {
   width: inherit;
   height: inherit;
 }
-section[data-section="home-learnmore"] {
+section[data-section="left-contxt"] {
   --gap: 155px;
   --max-w: 787px;
 
   min-height: 100vh;
 }
-section[data-section="home-learnmore"] > p {
+section[data-section="left-contxt"] {
+  min-height: 100%;
+}
+section[data-section="left-contxt"] .services {
+  min-height: 100%;
+}
+section[data-section="left-contxt"] > p {
   max-width: var(--max-w);
   margin-left: calc((380px + var(--gap)) + var(--p-inline));
   padding-inline-end: var(--p-inline);
 }
-section[data-section="home-learnmore"] .learnmore-section {
+section[data-section="left-contxt"] .learnmore-section {
   height: 590px;
   background: var(--c-lightgrey);
   margin-top: 200px;
   padding-inline: var(--p-inline);
 }
-section[data-section="home-learnmore"] .learnmore-section .wrapper {
+section[data-section="left-contxt"] .learnmore-section .wrapper {
   display: flex;
   grid-gap: var(--gap);
 }
-section[data-section="home-learnmore"] .learnmore-section .wrapper > * {
+section[data-section="left-contxt"] .learnmore-section .wrapper > * {
   margin-top: -4rem;
 }
-section[data-section="home-learnmore"] .learnmore-section .wrapper > *:is(img) {
+section[data-section="left-contxt"] .learnmore-section .wrapper > *:is(img) {
   height: 100%;
 }
-section[data-section="home-learnmore"] .learnmore-section .context {
+section[data-section="left-contxt"] .learnmore-section .context {
   display: flex;
   flex-direction: column;
   grid-gap: 40px;
   max-width: 787px;
   margin: auto 0;
 }
-section[data-section="home-learnmore"] .get-in-touch {
+section[data-section="left-contxt"] .get-in-touch,
+section[data-section="left-contxt"] .view-port {
   max-width: var(--max-w);
   padding-inline: var(--p-inline);
   margin-block: 100px var(--p-block);
@@ -303,28 +343,21 @@ section[data-section="home-learnmore"] .get-in-touch {
   flex-direction: column;
   grid-gap: 40px;
 }
-main#about > section * {
+main#about > section *,
+main#services > section * {
   transition: var(--duration-1) var(--timing);
 }
 main#about .paragraph {
   width: 55%;
 }
-section[data-section="contxt-1"] {
+section[data-section="content"] {
   padding: var(--p-block) var(--p-inline) 0;
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
-section[data-section="contxt-1"] .img-container {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-wrap: wrap;
-  width: 100%;
-  text-align: end;
-  gap: 1.25rem;
-  color: var(--c-darkgrey);
-  font-size: var(--size-label);
+section[data-section="content"].services {
+  padding: 0 var(--p-inline) !important;
 }
 section[data-section="contxt-2"] {
   padding: var(--p-block) var(--p-inline) var(--p-inline);
@@ -358,6 +391,12 @@ section[data-section="contxt-2"] .paragraph {
 section[data-section="contxt-2"] .paragraph p {
   margin-left: auto;
 }
+section[data-section="accordion"] {
+  padding: var(--p-inline);
+  display: flex;
+  flex-direction: column;
+  /* gap: 100px; */
+}
 /* BUTTON */
 .btn {
   width: fit-content;
@@ -378,6 +417,7 @@ section[data-section="contxt-2"] .paragraph p {
   font-size: var(--size-body);
   line-height: var(--size-body-lh);
   text-transform: capitalize;
+  border-bottom: 1.5px solid var(--c-lightgrey);
 }
 .btn-2::after {
   content: "";
@@ -387,6 +427,9 @@ section[data-section="contxt-2"] .paragraph p {
 footer {
   background: var(--c-accent100);
   color: var(--c-white);
+}
+footer > * {
+  transition: var(--duration-1) var(--timing);
 }
 footer .container {
   padding: 104px var(--p-inline) 64px;

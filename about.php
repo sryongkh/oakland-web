@@ -10,7 +10,7 @@
             </div>
         </div>
     </section>
-    <section data-section="contxt-1">
+    <section data-section="content">
         <h2 class="fluid-heading-2">Innovation.<br />
             Guiding our journey from the start.</h2>
         <div class="img-container">

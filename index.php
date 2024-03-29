@@ -31,7 +31,7 @@
       </div>
     </div>
   </section>
-  <section data-section="home-learnmore">
+  <section data-section="left-contxt">
     <p class="fluid-body">Leading the market for two decades, we have been experts in energy efficiency. With an unwavering commitment to innovation, we offer tailored solutions for projects of all sizes. From LED lighting to photovoltaic energy and electric mobility, our dedicated team works tirelessly to deliver cutting-edge results. We are committed to shaping a more sustainable and efficient energy future.</p>
     <div class="learnmore-section">
       <div class="wrapper">
