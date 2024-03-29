@@ -21,6 +21,13 @@
 @media (max-width: 1023.98px) {
 }
 @media (max-width: 991.98px) {
+  :root {
+    --p-block: 3rem;
+    --p-inline: 1.5rem;
+  }
+  header .logo img {
+    height: 2.5rem;
+  }
   section[data-section="home-hero"] .container {
     padding: 2rem;
   }
@@ -39,7 +46,7 @@
   }
   section[data-section="home-learnmore"] .learnmore-section {
     height: 100%;
-    padding-block: var(--p-inline-mobile);
+    padding: var(--p-inline-mobile);
   }
   section[data-section="home-learnmore"] > p {
     padding-inline: var(--p-inline);
@@ -51,6 +58,9 @@
   }
   section[data-section="home-learnmore"] .learnmore-section .wrapper > * {
     margin: 0;
+  }
+  section[data-section="home-learnmore"] .get-in-touch {
+    padding: var(--p-block) var(--p-inline);
   }
   footer .container {
     grid-gap: 3rem;
@@ -65,8 +75,20 @@
   footer .container > .wrapper .iso img {
     margin: 0 auto;
   }
+  main#about .paragraph {
+    width: 100%;
+  }
+  section[data-section="contxt-1"] .img-container figure {
+    order: 1;
+  }
+  section[data-section="contxt-1"] .img-container p {
+    order: 2;
+  }
 }
 @media (max-width: 767.98px) {
+  header ul {
+    display: none;
+  }
   section[data-section="home-hero"] {
     height: 100%;
     max-width: 100%;
@@ -90,6 +112,13 @@
   }
   section[data-section="home-learnmore"] > p {
     padding: 0 var(--p-inline-mobile);
+  }
+  section[data-section="contxt-2"] {
+    padding-block: var(--p-block);
+    gap: 40px;
+  }
+  section[data-section="contxt-2"] .banner:before {
+    font-size: 1.5rem;
   }
   footer .menu {
     display: flex;
@@ -130,6 +159,6 @@
     padding: var(--p-inline-mobile);
   }
   footer .container {
-    padding: 4rem 2rem 2rem
+    padding: 4rem 2rem 2rem;
   }
 }
