@@ -303,14 +303,57 @@ section[data-section="home-learnmore"] .get-in-touch {
   flex-direction: column;
   grid-gap: 40px;
 }
+main#about .paragraph {
+  width: 55%;
+}
 section[data-section="contxt-1"] {
   padding: var(--p-block) var(--p-inline) 0;
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
+section[data-section="contxt-1"] .img-container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: end;
+  gap: 1.25rem;
+  color: var(--c-darkgrey);
+  font-size: var(--size-label);
+}
 section[data-section="contxt-2"] {
   padding: var(--p-block) var(--p-inline) var(--p-inline);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+section[data-section="contxt-2"] .banner {
+  position: relative;
+  padding-top: 40.243902439%;
+  background: url("../media/about-2.png") center center / cover no-repeat;
+  border-radius: 0.5rem;
+}
+section[data-section="contxt-2"] .banner:before {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "Building the future of energy evolution";
+  color: var(--c-white);
+  font-size: 2.5rem;
+  text-align: center;
+}
+section[data-section="contxt-2"] .paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+
+}
+section[data-section="contxt-2"] .paragraph p {
+  margin-left: auto;
 }
 /* BUTTON */
 .btn {
