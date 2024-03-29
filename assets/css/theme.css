@@ -303,11 +303,14 @@ section[data-section="home-learnmore"] .get-in-touch {
   flex-direction: column;
   grid-gap: 40px;
 }
-main#about {
-  padding: var(--p-block) var(--p-inline);
+section[data-section="contxt-1"] {
+  padding: var(--p-block) var(--p-inline) 0;
   display: flex;
   flex-direction: column;
-  grid-gap: 100px;
+  gap: 80px;
+}
+section[data-section="contxt-2"] {
+  padding: var(--p-block) var(--p-inline) var(--p-inline);
 }
 /* BUTTON */
 .btn {
