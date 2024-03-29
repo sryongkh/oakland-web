@@ -129,14 +129,18 @@ header {
   bottom: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: var(--p-header);
   color: var(--c-white);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   z-index: 99;
 }
 header ul {
   display: flex;
   grid-gap: 2rem;
+}
+header ul li a {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 main {
   position: relative;
@@ -144,6 +148,9 @@ main {
   display: flex;
   flex-direction: column;
   z-index: 1;
+}
+header .logo-container {
+  filter: invert(1);
 }
 /* GLOBAL */
 .header {
@@ -296,7 +303,12 @@ section[data-section="home-learnmore"] .get-in-touch {
   flex-direction: column;
   grid-gap: 40px;
 }
-
+main#about {
+  padding: var(--p-block) var(--p-inline);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 100px;
+}
 /* BUTTON */
 .btn {
   width: fit-content;
