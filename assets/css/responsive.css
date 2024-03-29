@@ -7,6 +7,9 @@
 @media (min-width: 991.98px) {
 }
 @media (min-width: 767.98px) {
+  header .navmenu {
+    display: none;
+  }
 }
 @media (min-width: 575.98px) {
 }
@@ -76,6 +79,15 @@
   section[data-section="left-contxt"] .get-in-touch {
     padding: var(--p-block) var(--p-inline);
   }
+  section[data-section="contact-content"] {
+    padding-block: var(--p-block-mobile);
+  }
+  section[data-section="contact-content"] .content {
+    flex-direction: column;
+  }
+  section[data-section="contact-content"] .content > div {
+    width: 100% !important;
+  }
   footer .container {
     grid-gap: 3rem;
   }
@@ -96,6 +108,9 @@
 @media (max-width: 767.98px) {
   header ul {
     display: none;
+  }
+  header .navmenu {
+    display: flex;
   }
   section[data-section="home-hero"] {
     height: 100%;

@@ -24,6 +24,7 @@
   --p-header-mobile: 1.5rem;
   --p-block: 140px;
   --p-block-mobile: 6rem;
+  --p-bottom: 4rem;
   --p-inline: 100px;
   --p-inline-mobile: 1.5rem;
 
@@ -142,6 +143,15 @@ header ul {
 header ul li a {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
+header .navmenu {
+  background: none;
+  border: 0;
+  padding: 0.5rem;
+}
+header .navmenu img {
+  width: 3rem;
+  height: 3rem;
+}
 main {
   position: relative;
   min-height: 100vh;
@@ -155,7 +165,7 @@ header .logo-container {
 /* GLOBAL */
 .header {
   min-height: 640px;
-  padding: 5% var(--p-inline);
+  padding: 5% var(--p-inline) var(--p-bottom);
   display: flex;
   align-items: end;
 }
@@ -227,6 +237,11 @@ header .logo-container {
   padding-block: 1.5rem;
   border: 0;
   border-top: 1px solid var(--c-darkgrey);
+}
+.row {
+  display: flex;
+  grid-gap: 20px;
+  align-items: center;
 }
 /* END: GLOBAL */
 /* HERO */
@@ -395,7 +410,69 @@ section[data-section="accordion"] {
   padding: var(--p-inline);
   display: flex;
   flex-direction: column;
-  /* gap: 100px; */
+}
+section[data-section="port-hero"] {
+  position: relative;
+  background: url("../media/portfolio-banner.png") center center / cover
+    no-repeat;
+  color: var(--c-white);
+  z-index: 0;
+}
+section[data-section="port-hero"] .contxt {
+  position: relative;
+  z-index: 2;
+}
+section[data-section="port-hero"] .container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+section[data-section="contact-content"] {
+  padding: var(--p-inline) var(--p-inline) var(--p-block);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 100px;
+}
+section[data-section="contact-content"] .content {
+  display: flex;
+  grid-gap: 20px;
+}
+section[data-section="contact-content"] .content .info,
+section[data-section="contact-content"] .content .info > div {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4rem;
+}
+section[data-section="contact-content"] .content .info > div {
+  grid-gap: 40px;
+}
+section[data-section="contact-content"] .content .info {
+  width: 39.10060975609756%;
+}
+section[data-section="contact-content"] .content .form {
+  width: 60.8993902439%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+section[data-section="contact-content"] .map-container {
+  display: flex;
+  grid-gap: 20px;
+}
+section[data-section="contact-content"] .map-container img {
+  width: 100%;
+  height: 100%;
+}
+section[data-section="contact-content"] .map-container figure:nth-child(1) {
+  width: 75%;
+}
+section[data-section="contact-content"] .map-container figure:nth-child(2) {
+  width: 25%;
 }
 /* BUTTON */
 .btn {
@@ -407,6 +484,10 @@ section[data-section="accordion"] {
   color: var(--c-accent100);
   text-align: center;
   border-radius: 4rem;
+}
+.btn.black {
+  background: var(--c-accent100);
+  color: var(--c-white);
 }
 .btn.contact {
   background: rgba(255, 255, 255, 0.3);
@@ -423,6 +504,23 @@ section[data-section="accordion"] {
   content: "";
 }
 /* END: BUTTON */
+/* INPUT */
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid var(--c-lightgrey);
+  width: 100%;
+  outline: none;
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: var(--c-darkgrey);
+}
+input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+}
+/* END: INPUT */
 /* FOOTER */
 footer {
   background: var(--c-accent100);
