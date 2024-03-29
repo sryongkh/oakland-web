@@ -24,6 +24,8 @@
   :root {
     --p-block: 3rem;
     --p-inline: 1.5rem;
+
+    --size-label: 0.7rem;
   }
   header .logo img {
     height: 2.5rem;

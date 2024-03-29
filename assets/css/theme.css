@@ -168,8 +168,8 @@ header .logo-container {
   background: var(--c-accent100);
   color: var(--c-white);
 }
-.header.white {
-  background: var(--c-white);
+.header.light {
+  background: var(--c-lightgrey);
   color: var(--c-accent100);
 }
 .fluid-heading-1,
@@ -303,6 +303,9 @@ section[data-section="home-learnmore"] .get-in-touch {
   flex-direction: column;
   grid-gap: 40px;
 }
+main#about > section * {
+  transition: var(--duration-1) var(--timing);
+}
 main#about .paragraph {
   width: 55%;
 }
@@ -345,12 +348,12 @@ section[data-section="contxt-2"] .banner:before {
   color: var(--c-white);
   font-size: 2.5rem;
   text-align: center;
+  transition: var(--duration-1) var(--timing);
 }
 section[data-section="contxt-2"] .paragraph {
   display: flex;
   flex-direction: column;
   margin-left: auto;
-
 }
 section[data-section="contxt-2"] .paragraph p {
   margin-left: auto;
@@ -369,6 +372,7 @@ section[data-section="contxt-2"] .paragraph p {
 .btn.contact {
   background: rgba(255, 255, 255, 0.3);
   color: var(--c-white);
+  border: 1px solid var(--c-lightgrey);
 }
 .btn-2 {
   font-size: var(--size-body);

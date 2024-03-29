@@ -2,7 +2,7 @@
 
 <?php include($root . "header.php"); ?>
 <main id="about">
-    <section data-section="about-hero" class="header white">
+    <section data-section="about-hero" class="header light">
         <div class="container">
             <div class="contxt">
                 <h2 class="fluid-heading-1">About us</h2>
