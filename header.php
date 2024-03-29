@@ -21,7 +21,21 @@
 
 <body>
     <header>
-        <a href="">
-            <img src="<?php $root; ?>assets/media/logo.svg" alt="Oakland | Energy Consulting">
+        <a href="" class="logo">
+            <img src="<?php $root; ?>assets/media/logo-2.svg" alt="Oakland | Energy Consulting">
         </a>
+        <ul>
+            <li>
+                <a href="about.php">About us</a>
+            </li>
+            <li>
+                <a href="about.php">About us</a>
+            </li>
+            <li>
+                <a href="about.php">About us</a>
+            </li>
+            <li>
+                <a href="about.php" class="btn">About us</a>
+            </li>
+        </ul>
     </header>

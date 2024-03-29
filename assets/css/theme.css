@@ -26,6 +26,9 @@
   --p-block-mobile: 6rem;
   --p-inline: 100px;
   --p-inline-mobile: 1.5rem;
+
+  --banner-h: 640px;
+  --banner-h-mobile: 100vh;
 }
 /* RESET HTML */
 /* Box sizing rules */
@@ -56,6 +59,7 @@ dd {
   margin-block-end: 0;
 }
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
@@ -118,7 +122,7 @@ body {
 }
 header {
   height: fit-content;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -126,8 +130,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: var(--p-header);
+  color: var(--c-white);
+  /* mix-blend-mode: plus-lighter; */
+}
+header ul {
+  display: flex;
 }
 main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -314,6 +324,6 @@ footer .container > p {
 }
 footer .menu > div > p {
   font-size: 21px;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 /* END: FOOTER */
