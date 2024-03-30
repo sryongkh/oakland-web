@@ -477,6 +477,20 @@ section[data-section="contact-content"] .map-container figure:nth-child(1) {
 section[data-section="contact-content"] .map-container figure:nth-child(2) {
   width: 25%;
 }
+section[data-section="policy-list"] {
+  transition: var(--duration-1) var(--timing);
+}
+section[data-section="policy-list"] {
+  padding: var(--p-inline) var(--p-inline) var(--p-block);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4rem;
+}
+section[data-section="policy-list"] .list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5rem;
+}
 /* BUTTON */
 .btn {
   width: fit-content;
