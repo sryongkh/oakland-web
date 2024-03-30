@@ -229,6 +229,9 @@ header .logo-container {
   height: auto;
 }
 .accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: var(--c-accent100);
   background: transparent;
   font-size: var(--size-accordion-title);
@@ -237,6 +240,9 @@ header .logo-container {
   padding-block: 1.5rem;
   border: 0;
   border-top: 1px solid var(--c-darkgrey);
+}
+.accordion i::before {
+  color: var(--c-darkgrey);
 }
 .row {
   display: flex;
@@ -512,13 +518,20 @@ section[data-section="policy-list"] .list {
   border: 1px solid var(--c-lightgrey);
 }
 .btn-2 {
+  width: fit-content;
+  padding-block: 0.5rem;
   font-size: var(--size-body);
   line-height: var(--size-body-lh);
-  text-transform: capitalize;
   border-bottom: 1.5px solid var(--c-lightgrey);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .btn-2::after {
-  content: "";
+  font-family: iconfont !important;
+  content: "\e902";
+  color: var(--c-accent100);
+  font-size: 12px;
 }
 /* END: BUTTON */
 /* INPUT */

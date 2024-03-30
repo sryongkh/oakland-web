@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'iconfont';
+  src:  url('iconfont.eot');
+  src:  url('iconfont.eot#iefix') format('embedded-opentype'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.svg#iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ic, [class^="ic-"], [class*=" ic-"] {
+  font-family: 'iconfont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-arrw-down:before {
+  content: "\e900";
+  color: #fff;
+}
+.ic-arrw-left:before {
+  content: "\e901";
+  color: #fff;
+}
+.ic-arrw-right:before {
+  content: "\e902";
+  color: #fff;
+}
+.ic-arrw-up:before {
+  content: "\e903";
+  color: #fff;
+}
+.ic-graph:before {
+  content: "\e904";
+  color: #fff;
+}
+.ic-nav-left:before {
+  content: "\e905";
+  color: #fff;
+}
+.ic-nav-right:before {
+  content: "\e906";
+  color: #fff;
+}
+.ic-people:before {
+  content: "\e907";
+  color: #fff;
+}
+.ic-star:before {
+  content: "\e908";
+  color: #fff;
+}

@@ -42,6 +42,9 @@
   .img-container p {
     order: 2;
   }
+  .row {
+    flex-wrap: wrap;
+  }
   header .logo img {
     height: 2.5rem;
   }

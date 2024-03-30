@@ -13,28 +13,28 @@
     <section data-section="accordion">
         <button class="accordion">
             <p>Illumination</p>
-            <i></i>
+            <i class="ic ic-arrw-down"></i>
         </button>
         <!-- <div class="panel">
             <p>Lorem Ipsum</p>
         </div> -->
         <button class="accordion">
             <p>Sustainable Energy</p>
-            <i></i>
+            <i class="ic ic-arrw-down"></i>
         </button>
         <!-- <div class="panel">
             <p>Lorem Ipsum</p>
         </div> -->
         <button class="accordion">
             <p>Electric Mobility</p>
-            <i></i>
+            <i class="ic ic-arrw-down"></i>
         </button>
         <!-- <div class="panel">
             <p>Lorem Ipsum</p>
         </div> -->
         <button class="accordion">
             <p>Consulting</p>
-            <i></i>
+            <i class="ic ic-arrw-down"></i>
         </button>
         <!-- <div class="panel">
             <p>Lorem Ipsum</p>

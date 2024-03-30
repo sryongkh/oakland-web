@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php $root; ?>assets/css/theme.css" />
     <link rel="stylesheet" href="<?php $root; ?>assets/css/responsive.css" />
     <link rel="stylesheet" href="<?php $root; ?>assets/font/font.css" />
+    <link rel="stylesheet" href="<?php $root; ?>assets/font/iconfont/iconfont.css" />
 </head>
 
 <body>
