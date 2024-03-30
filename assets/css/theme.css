@@ -204,6 +204,8 @@ header .logo-container {
 .fluid-label {
   font-size: var(--size-label);
   line-height: var(--size-label-lh);
+  color: var(--c-accent100);
+  opacity: 0.5;
 }
 .img-container {
   display: flex;
@@ -497,6 +499,77 @@ section[data-section="policy-list"] .list {
   flex-direction: column;
   grid-gap: 2.5rem;
 }
+section[data-section="portfolio-info"] {
+  padding: var(--p-block) var(--p-inline) 120px;
+}
+section[data-section="portfolio-info"] .container {
+  width: 79.72560975609755%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+section[data-section="portfolio-info"] .iconlist {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section[data-section="portfolio-info"] .iconlist .iconitem {
+  display: flex;
+  align-items: center;
+  grid-gap: 2rem;
+}
+section[data-section="portfolio-info"] .iconlist .iconitem .icon-ctn {
+  width: 46px;
+  height: 46px;
+  background: var(--c-accent100);
+  border-radius: 0.5rem;
+}
+section[data-section="portfolio-info"] .iconlist .iconitem i {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section[data-section="portfolio-list"] {
+  padding: 4rem var(--p-inline);
+  background: var(--c-lightgrey);
+}
+section[data-section="portfolio-list"] .filter-tab {
+  display: flex;
+  grid-gap: 1rem;
+  max-width: 100%;
+  overflow: auto;
+}
+section[data-section="portfolio-list"] .filter-tab::-webkit-scrollbar {
+  display: none;
+}
+section[data-section="portfolio-list"] .tab-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  row-gap: 2.5rem;
+}
+section[data-section="portfolio-list"] .port-item {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+section[data-section="portfolio-list"] .port-item > div {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.5rem;
+}
+section[data-section="portfolio-list"] .port-item figure {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+section[data-section="portfolio-list"] .port-item figure > img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+}
 /* BUTTON */
 .btn {
   width: fit-content;
@@ -510,6 +583,16 @@ section[data-section="policy-list"] .list {
 }
 .btn.black {
   background: var(--c-accent100);
+  color: var(--c-white);
+}
+.btn.tab {
+  border: 0;
+  background: var(--c-white);
+  color: var(--c-accent100);
+  margin-bottom: 4rem;
+}
+.btn.tab.active {
+  background: var(--c-darkgrey);
   color: var(--c-white);
 }
 .btn.contact {

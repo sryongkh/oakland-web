@@ -53,7 +53,7 @@
         <div class="view-port">
             <h2 class="fluid-heading-2">Proudly helping businesses</h2>
             <p class="fluid-body">Explore our portfolio of remarkable projects where innovation and sustainability converge. Discover how we've transformed energy landscapes and elevated standards in the industry.</p>
-            <a href="btn-2">View our Portfolio</a>
+            <a href="portfolio.php" class="btn-2">View our Portfolio</a>
         </div>
     </section>
 </main>

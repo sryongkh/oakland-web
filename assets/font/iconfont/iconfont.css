@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'iconfont';
-  src:  url('iconfont.eot');
-  src:  url('iconfont.eot#iefix') format('embedded-opentype'),
-    url('iconfont.ttf') format('truetype'),
-    url('iconfont.woff') format('woff'),
-    url('iconfont.svg#iconfont') format('svg');
+  font-family: "iconfont";
+  src: url("iconfont.eot");
+  src: url("iconfont.eot#iefix") format("embedded-opentype"),
+    url("iconfont.ttf") format("truetype"), url("iconfont.woff") format("woff"),
+    url("iconfont.svg#iconfont") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.ic, [class^="ic-"], [class*=" ic-"] {
-  font-family: 'iconfont' !important;
+.ic,
+[class^="ic-"],
+[class*=" ic-"] {
+  font-family: "iconfont" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -38,10 +39,6 @@
   content: "\e903";
   color: #fff;
 }
-.ic-graph:before {
-  content: "\e904";
-  color: #fff;
-}
 .ic-nav-left:before {
   content: "\e905";
   color: #fff;
@@ -50,11 +47,18 @@
   content: "\e906";
   color: #fff;
 }
+.ic-graph:before {
+  content: "\e904";
+  color: #fff;
+  font-size: 1.5rem;
+}
 .ic-people:before {
   content: "\e907";
   color: #fff;
+  font-size: 1rem;
 }
 .ic-star:before {
   content: "\e908";
   color: #fff;
+  font-size: 1.5rem;
 }
