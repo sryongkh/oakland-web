@@ -41,6 +41,6 @@
             </li>
         </ul>
         <button class="navmenu">
-            <img src="assets/media/menu.svg" alt="">
+            <img src="<?php $root; ?>assets/media/menu.svg" alt="">
         </button>
     </header>

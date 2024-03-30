@@ -84,6 +84,7 @@
   }
   section[data-section="contact-content"] .content {
     flex-direction: column;
+    grid-gap: 4rem;
   }
   section[data-section="contact-content"] .content > div {
     width: 100% !important;

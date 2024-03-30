@@ -37,10 +37,11 @@
                     <input type="text" placeholder="Company (optional)" />
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <div class="row">
-                    <input type="checkbox">
+                <label class="container row checkbox">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
                     <p>I consent to Oakland C.E. processing my data for contact purposes.</p>
-                </div>
+                </label>
                 <button class="btn black">Send</button>
             </div>
         </div>
