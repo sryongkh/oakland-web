@@ -107,6 +107,10 @@ textarea,
 select {
   font: inherit;
 }
+button {
+  border: 0;
+  background: transparent;
+}
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
@@ -569,6 +573,54 @@ section[data-section="portfolio-list"] .port-item figure > img {
   aspect-ratio: 1 / 1;
   width: 100%;
   height: 100%;
+}
+main#portpage * {
+  transition: var(--duration-1) var(--timing);
+}
+section[data-section="portpage-hero"] .container {
+  width: 100%;
+}
+section[data-section="portpage-hero"] .contxt {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.5rem;
+}
+section[data-section="portpage-hero"] .contxt p {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+section[data-section="portpage-hero"] .navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+section[data-section="portpage-hero"] .navigation button:before {
+  color: var(--c-darkgrey);
+  cursor: pointer;
+}
+section[data-section="portpage-content"] {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 120px;
+}
+section[data-section="portpage-content"] .contxt {
+  display: flex;
+  justify-content: end;
+  padding: var(--p-inline) var(--p-inline) 0;
+}
+section[data-section="portpage-content"] .contxt p {
+  max-width: 79.72560975609755%;
+}
+section[data-section="portpage-content"] .image {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--p-inline);
+  grid-gap: 2.5rem;
+}
+section[data-section="portpage-content"] .image figure:nth-child(2) {
+  margin-left: auto;
+  margin-right: var(--p-inline);
 }
 /* BUTTON */
 .btn {

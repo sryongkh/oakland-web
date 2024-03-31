@@ -44,34 +44,7 @@
             <button class="btn tab">Electric Mobility</button>
         </div>
         <div class="tab-content">
-            <a href="#" class="port-item">
-                <figure>
-                    <img src="<?php $root; ?>assets/media/item-1.png" alt="">
-                </figure>
-                <div>
-                    <p class="fluid-body">Delloite Building, London</p>
-                    <p class="fluid-label">Energy Efficiency, LED Lighting</p>
-                </div>
-            </a>
-            <a href="#" class="port-item">
-                <figure>
-                    <img src="<?php $root; ?>assets/media/item-1.png" alt="">
-                </figure>
-                <div>
-                    <p class="fluid-body">Delloite Building, London</p>
-                    <p class="fluid-label">Energy Efficiency, LED Lighting</p>
-                </div>
-            </a>
-            <a href="#" class="port-item">
-                <figure>
-                    <img src="<?php $root; ?>assets/media/item-1.png" alt="">
-                </figure>
-                <div>
-                    <p class="fluid-body">Delloite Building, London</p>
-                    <p class="fluid-label">Energy Efficiency, LED Lighting</p>
-                </div>
-            </a>
-            <a href="#" class="port-item">
+            <a href="portfolio-page.php" class="port-item">
                 <figure>
                     <img src="<?php $root; ?>assets/media/item-1.png" alt="">
                 </figure>
@@ -82,7 +55,7 @@
             </a>
         </div>
     </section>
-    <section data-section="left-contxt">
+    <section data-section="left-contxt" class="contact">
         <div class="get-in-touch">
             <h2 class="fluid-heading-2">Get in touch with us</h2>
             <p class="fluid-body">If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals.</p>
