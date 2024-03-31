@@ -1,7 +1,7 @@
 <?php $root = ""; ?>
 
 <?php include($root . "header.php"); ?>
-<main>
+<main data-barba="container" data-barba-namespace="home">
     <section data-section="port-hero" class="header">
         <div class="container">
             <div class="contxt">

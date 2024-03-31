@@ -30,6 +30,7 @@
     </div>
 </footer>
 <!-- JS -->
+</div>
 <script src="<?php $root; ?>assets/js/theme.js"></script>
 </body>
 

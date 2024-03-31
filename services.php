@@ -1,7 +1,7 @@
 <?php $root = ""; ?>
 
 <?php include($root . "header.php"); ?>
-<main id="services">
+<main id="services" data-barba="container" data-barba-namespace="home">
     <section data-section="service-hero" class="header black">
         <div class="container">
             <div class="contxt">

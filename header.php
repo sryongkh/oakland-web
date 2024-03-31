@@ -13,14 +13,21 @@
     <link rel="mask-icon" href="<?php $root; ?>assets/icon/safari-pinned-tab.svg" color="#212529" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#212529" />
+    <meta name="view-transition" content="same-original">
     <!-- CSS -->
     <link rel="stylesheet" href="<?php $root; ?>assets/css/theme.css" />
     <link rel="stylesheet" href="<?php $root; ?>assets/css/responsive.css" />
     <link rel="stylesheet" href="<?php $root; ?>assets/font/font.css" />
     <link rel="stylesheet" href="<?php $root; ?>assets/font/iconfont/iconfont.css" />
+    <!-- JS -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </head>
 
-<body>
+<body data-barba="wrapper">
+    <div class="transition"></div>
+    <div class="wrapper">
     <header>
         <div class="logo-container">
             <a href="index.php" class="logo">

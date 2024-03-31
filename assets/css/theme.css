@@ -258,6 +258,22 @@ header .logo-container {
   line-height: var(--size-body-lh);
   text-align: start;
 }
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+.transition {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: var(--c-accent100);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
 /* END: GLOBAL */
 /* HERO */
 section[data-section="home-hero"] {
