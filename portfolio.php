@@ -1,6 +1,9 @@
-<?php $root = ""; ?>
+<?php
+$root = "";
+include($root . "inc/db.php");
+include($root . "header.php");
+?>
 
-<?php include($root . "header.php"); ?>
 <main data-barba="container" data-barba-namespace="home">
     <section data-section="port-hero" class="header">
         <div class="container">
@@ -51,6 +54,51 @@
                 <div>
                     <p class="fluid-body">Delloite Building, London</p>
                     <p class="fluid-label">Energy Efficiency, LED Lighting</p>
+                </div>
+            </a>
+            <a href="portfolio-page.php" class="port-item">
+                <figure>
+                    <img src="<?php $root; ?>assets/media/item-2.png" alt="">
+                </figure>
+                <div>
+                    <p class="fluid-body">Car Chargers, Oakland</p>
+                    <p class="fluid-label">Electric Mobility</p>
+                </div>
+            </a>
+            <a href="portfolio-page.php" class="port-item">
+                <figure>
+                    <img src="<?php $root; ?>assets/media/item-3.png" alt="">
+                </figure>
+                <div>
+                    <p class="fluid-body">Amazon Headquarters, UK</p>
+                    <p class="fluid-label">LED Lighting</p>
+                </div>
+            </a>
+            <a href="portfolio-page.php" class="port-item">
+                <figure>
+                    <img src="<?php $root; ?>assets/media/item-4.png" alt="">
+                </figure>
+                <div>
+                    <p class="fluid-body">Astrazeneca Lab Facilities, Nevada</p>
+                    <p class="fluid-label">LED Lighting</p>
+                </div>
+            </a>
+            <a href="portfolio-page.php" class="port-item">
+                <figure>
+                    <img src="<?php $root; ?>assets/media/item-5.png" alt="">
+                </figure>
+                <div>
+                    <p class="fluid-body">Gordon’s BBQ, Las Vegas</p>
+                    <p class="fluid-label">Energy Efficiency, LED Lighting</p>
+                </div>
+            </a>
+            <a href="portfolio-page.php" class="port-item">
+                <figure>
+                    <img src="<?php $root; ?>assets/media/item-6.png" alt="">
+                </figure>
+                <div>
+                    <p class="fluid-body">Car Chargers, Portugal</p>
+                    <p class="fluid-label">Electric Mobility</p>
                 </div>
             </a>
         </div>
