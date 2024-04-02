@@ -1,7 +1,7 @@
 <?php $root = ""; ?>
 
 <?php include($root . "header.php"); ?>
-<main id="about">
+<main id="about" data-barba="container" data-barba-namespace="home">
     <section data-section="about-hero" class="header light">
         <div class="container">
             <div class="contxt">

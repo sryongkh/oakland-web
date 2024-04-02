@@ -1,6 +1,6 @@
 <?php
 $root = "";
-include($root . "inc/db.php");
+// include($root . "inc/db.php");
 include($root . "header.php");
 ?>
 
